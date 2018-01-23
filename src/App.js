@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  handleClick = () => {
+  handleClickA = () => {
     import('./moduleA')
       .then(({ moduleA }) => {
         // Use moduleA
@@ -12,10 +12,21 @@ class App extends Component {
       });
   };
 
+  handleClickB = () => {
+    import('./moduleB')
+      .then(({ moduleB }) => {
+        // Use moduleB
+      })
+      .catch(err => {
+        // Handle failure
+      });
+  };
+
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>Load</button>
+        <button onClick={this.handleClickA}>Load A</button>
+        <button onClick={this.handleClickB}>Load B</button>
       </div>
     );
   }
