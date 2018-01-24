@@ -1,7 +1,8 @@
 #Code Splitting Demo
 
 Using create-react-app and ejecting after.
-Created two modules (A and B) to be loaded on demand after clicking on buttons. Using the function "import" which returns a promise. 
+Created two modules (A and B) to be loaded on demand after clicking on buttons. Using the function "import" which returns a promise.
+In the generated bundle, you will see: "Hello Module C". Because, Module C is being imported in the normal way. 
 
     File sizes after gzip:
     36.11 KB (+41 B)  build/static/js/main.0e1aaca1.js

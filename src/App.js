@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ModuleC from './moduleC';
 import './App.css';
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        {ModuleC}
         <button onClick={this.handleClickA}>Load A</button>
         <button onClick={this.handleClickB}>Load B</button>
       </div>
